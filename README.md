@@ -38,3 +38,34 @@ ollama --version
 You should see a version number like ollama version 0.14.0 or higher.
 Note: Ollama v0.14.0 or newer is required for Claude Code compatibility.
 
+Step 2 — Download an AI Model
+Now you need to download an AI model that will do the actual coding work. Pick one based on how powerful your computer is:
+
+Your PC
+Recommended Model
+Command to Run
+Size
+Low-end (8 GB RAM)
+Llama 3.2 3B
+ollama pull llama3.2:3b
+~2 GB
+Mid-range (16 GB RAM)
+Qwen2.5-Coder 7B
+ollama pull qwen2.5-coder:7b
+~5 GB
+Powerful (32 GB+ RAM)
+Qwen2.5-Coder 32B
+ollama pull qwen2.5-coder:32b
+~20 GB
+Any PC (free cloud)
+Qwen3-Coder
+ollama pull qwen3-coder
+cloud
+
+
+Example — if you have a powerful PC, run:
+ollama pull qwen2.5-coder:32b
+The download will take a few minutes depending on your internet speed. You will see a progress bar.
+Tip: For best results with Claude Code, your model should support at least 32,000–64,000 tokens of context. Qwen2.5-Coder and Qwen3-Coder both support this well.
+
+
